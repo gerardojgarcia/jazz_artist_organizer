@@ -94,6 +94,10 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+
+  .app__form {
+    border: 2px solid black;
+  }
 }
 
 
@@ -101,6 +105,12 @@ button:focus-visible {
 .app__form {
   display: flex;
   flex-flow: column ;
+  padding: 1rem;
+
+  color-scheme: light dark;
+
+  border: 2px solid white;
+  border-radius: .5rem;
 
 
 }
@@ -109,6 +119,7 @@ button:focus-visible {
 .app__form label {
   text-align: left;
   margin-bottom: .2rem;
+  font-size: 1.5rem;
 }
 
 .app__form input {

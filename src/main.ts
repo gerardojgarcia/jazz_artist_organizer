@@ -1,3 +1,10 @@
+const artistNameEl = document.getElementById('artist-name')?.value
+const albumNameEl = document.getElementById('album-name')?.value
+
+
+
+
+
 
 interface JazzAlbum {
   albumName: string
@@ -39,4 +46,6 @@ function getJazzAlbumFromLocalStorage(): JazzAlbum | null {
 
 const newAlbum = createJazzAlbum("Kind of blue", "Miles Davis", "1959", "Columbia Records")
 
+console.log(newAlbum)
+console.log(artistNameEl)
 console.log(newAlbum)
