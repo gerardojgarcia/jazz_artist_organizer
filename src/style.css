@@ -95,3 +95,23 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+.app__form {
+  display: flex;
+  flex-flow: column ;
+
+
+}
+
+
+.app__form label {
+  text-align: left;
+  margin-bottom: .2rem;
+}
+
+.app__form input {
+
+  margin-bottom: 1rem;
+}

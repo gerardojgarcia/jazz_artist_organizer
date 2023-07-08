@@ -8,7 +8,28 @@
     <title>Vite + TS</title>
   </head>
   <body>
-    <div id="app"></div>
+
+    <main>
+      <div id="app">
+
+        <form class="app__form" action="submit" method="post">
+            <label for="artistName">Artist</label>
+            <input type="text" name="artistName" placeholder="Artist">
+            <label for="albumName">Album</label>
+            <input type="text" name="artistName" placeholder="Album">
+            <label for="date">Release Date</label>
+            <input type="text" name="recordLabel" placeholder="Release Date">
+            <label for="artistName">Record Label</label>
+            <input type="text" name="artistName" placeholder="Label">
+
+
+            <button type="button" name="button">Submit</button>
+        </form>
+
+
+      </div>
+    </main>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
