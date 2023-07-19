@@ -1,5 +1,7 @@
-const artistNameEl = document.getElementById('artist-name')?.value
+const artistNameEl = document.getElementById('artist-name')?.value 
 const albumNameEl = document.getElementById('album-name')?.value
+
+const formBtn = document.getElementById('form-btn')
 
 
 
@@ -29,8 +31,12 @@ function createJazzAlbum(albumName: string, artistName: string, date: string, re
 
 
 function saveJazzAlbumToLocalStorage(jazzAlbum: JazzAlbum): void {
+
+  const newAlbum = createJazzAlbum(jazzAlbum)
   const jsonData = JSON.stringify(jazzAlbum);
   localStorage.setItem('jazzAlbum', jsonData);
+
+  console.log(newAlbum)
 }
 
 
@@ -44,8 +50,14 @@ function getJazzAlbumFromLocalStorage(): JazzAlbum | null {
 
 
 
-const newAlbum = createJazzAlbum("Kind of blue", "Miles Davis", "1959", "Columbia Records")
+
 
 console.log(newAlbum)
 console.log(artistNameEl)
 console.log(newAlbum)
+
+
+formBtn.addEventListener('click', function(){
+
+  console.log(newAlbum)
+})
