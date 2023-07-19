@@ -1,7 +1,7 @@
 const artistNameEl = document.getElementById('artist-name')?.value 
 const albumNameEl = document.getElementById('album-name')?.value
 
-const formBtn = document.getElementById('form-btn')
+
 
 
 
@@ -57,7 +57,3 @@ console.log(artistNameEl)
 console.log(newAlbum)
 
 
-formBtn.addEventListener('click', function(){
-
-  console.log(newAlbum)
-})
